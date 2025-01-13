@@ -22,9 +22,10 @@
 <table class="table align-middle mb-0 bg-white">
   <thead class="bg-light">
     <tr>
+      <th>Nº</th>
       <th>Nome</th>
       <th>Email</th>
-      <th>Actions</th>
+      <th>Acões</th>
     </tr>
   </thead>
   <tbody>
@@ -38,6 +39,7 @@
         @foreach ($users as $user)
 
         <tr>
+          <td>{{ $loop->iteration }}</td>
           <td>
             <div class="d-flex align-items-center">
               <div class="ms-3">
